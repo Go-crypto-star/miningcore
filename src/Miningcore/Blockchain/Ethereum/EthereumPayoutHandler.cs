@@ -447,6 +447,27 @@ public class EthereumPayoutHandler : PayoutHandlerBase,
             case GethChainType.Pink:
                return PinkConstants.BaseRewardInitial;
 
+            case GethChainType.Flora:
+               return FloraConstants.BaseRewardInitial;
+               
+           case GethChainType.Egem:
+               return EgemConstants.BaseRewardInitial;
+               
+           case GethChainType.Aves:
+               return AvesConstants.BaseRewardInitial;
+               
+           case GethChainType.Canxium:
+               return CanxiumConstants.BaseRewardInitial;
+               
+           case GethChainType.Altcoin:
+               return AltcoinConstants.BaseRewardInitial;
+           
+           case GethChainType.Bitnet:
+               return BitnetConstants.BaseRewardInitial;  
+   
+           case GethChainType.Elhereum:
+               return ElhereumConstants.BaseRewardInitial;
+
             case GethChainType.Callisto:
                 return CallistoConstants.BaseRewardInitial * (CallistoConstants.TreasuryPercent / 100);
             
