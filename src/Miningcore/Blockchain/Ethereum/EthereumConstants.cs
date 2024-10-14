@@ -90,6 +90,29 @@ public class OctaSpaceConstants
     public const decimal BaseRewardInitial = 6.5m;
 }
 
+public class LuckyBitsConstants
+{
+    public const ulong YearOneHeight = 100001;
+    public const decimal YearOneBlockReward = 9.0m;
+    public const ulong YearTwoHeight = 200001;
+    public const decimal YearTwoBlockReward = 8.0m;
+    public const ulong YearThreeHeight = 300001;
+    public const decimal YearThreeBlockReward = 7.0m;
+    public const ulong YearFourHeight = 400001;
+    public const decimal YearFourBlockReward = 6.0m;
+    public const ulong YearFiveHeight = 500001;
+    public const decimal YearFiveBlockReward = 5.0m;
+    public const ulong YearSixHeight = 600001;
+    public const decimal YearSixBlockReward = 4.0m;
+    public const ulong YearSevenHeight = 700001;
+    public const decimal YearSevenBlockReward = 3.0m;
+    public const ulong YearEightHeight = 800001;
+    public const decimal YearEightBlockReward = 2.0m;
+    public const ulong YearNineHeight = 900001;
+    public const decimal YearNineBlockReward = 1.0m;
+    public const decimal BaseRewardInitial = 10.0m;
+}
+
 public class FloraConstants
 {
     public const decimal BaseRewardInitial = 5.0m;
@@ -161,29 +184,6 @@ public class UbiqConstants
     public const decimal BaseRewardInitial = 8.0m;
 }
 
-public class LuckyBitsConstants
-{
-    public const ulong YearOneHeight = 100001;
-    public const decimal YearOneBlockReward = 9.0m;
-    public const ulong YearTwoHeight = 200001;
-    public const decimal YearTwoBlockReward = 8.0m;
-    public const ulong YearThreeHeight = 300001;
-    public const decimal YearThreeBlockReward = 7.0m;
-    public const ulong YearFourHeight = 400001;
-    public const decimal YearFourBlockReward = 6.0m;
-    public const ulong YearFiveHeight = 500001;
-    public const decimal YearFiveBlockReward = 5.0m;
-    public const ulong YearSixHeight = 600001;
-    public const decimal YearSixBlockReward = 4.0m;
-    public const ulong YearSevenHeight = 700001;
-    public const decimal YearSevenBlockReward = 3.0m;
-    public const ulong YearEightHeight = 800001;
-    public const decimal YearEightBlockReward = 2.0m;
-    public const ulong YearNineHeight = 900001;
-    public const decimal YearNineBlockReward = 1.0m;
-    public const decimal BaseRewardInitial = 10.0m;
-}
-
 public enum EthereumNetworkType
 {
     Main = 1,
@@ -204,8 +204,8 @@ public enum EthereumNetworkType
     OctaSpace = 800001,
     OctaSpaceTestnet = 800002,
     Hypra = 622277,
-    LuckyBits = 777,
     Elhereum = 2323,
+    LuckyBits = 777,
 
     Unknown = -1,
 }
@@ -227,11 +227,11 @@ public enum GethChainType
     Bitnet = 210,
     Canxium = 3003,
     Altcoin = 2330,
+    Elhereum = 2323,
     OctaSpace,
     OctaSpaceTestnet,
     Hypra,
     LuckyBits,
-    Elhereum = 2323,
     
     Unknown = -1,
 }
