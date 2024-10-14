@@ -4763,11 +4763,11 @@
         "telegram": "",
         "discord": "",
         "explorerBlockLinks": {
-            "block": "https://explorer.callisto.network/blocks/$height$",
-            "uncle": "https://explorer.callisto.network/blocks/$height$"
+            "block": "https://callistoexplorer.com/blocks/$height$",
+            "uncle": "https://callistoexplorer.com/blocks/$height$"
         },
-        "explorerTxLink": "https://explorer.callisto.network/tx/{0}",
-        "explorerAccountLink": "https://explorer.callisto.network/address/{0}",
+        "explorerTxLink": "https://callistoexplorer.com/tx/{0}",
+        "explorerAccountLink": "https://callistoexplorer.com/address/{0}",
         "ethasher": "ethash"
     },
     "ethereum": {
@@ -4842,59 +4842,125 @@
         "explorerAccountLink": "https://blockscout.etherone.one/address/{0}",
         "ethasher": "ethash"
     },
-        "octaspace": {
+        "altcoinchain": {
+        "name": "Altcoin Chain",
+        "canonicalName": "AltcoinChain",
+        "symbol": "ALT",
+        "family": "ethereum",
+        "website": "https://www.altcoinchain.org/",
+        "market": "",
+        "twitter": "https://twitter.com/chainAltcoin",
+        "telegram": "https://t.me/AltcoinchainNews",
+        "discord": "https://discord.com/invite/hcXHyQP4Je",
+        "explorerBlockLinks": {
+            "block": "http://expedition.altcoinchain.org/block/$hash$?network=Altcoinchain",
+            "uncle": "http://expedition.altcoinchain.org/block/$hash$?network=Altcoinchain"
+        },
+        "explorerTxLink": "http://expedition.altcoinchain.org/tx/{0}?network=Altcoinchain",
+        "explorerAccountLink": "http://expedition.altcoinchain.org/address/{0}?network=Altcoinchain"
+    },
+        "canxium": {
+        "name": "Canxium",
+        "canonicalName": "Canxium",
+        "symbol": "CAU",
+        "family": "ethereum",
+        "website": "https://canxium.org/",
+        "market": "https://coinpaprika.com/coin/cau-canxium",
+        "twitter": "https://twitter.com/canxiumchain",
+        "telegram": "https://t.me/canxium",
+        "discord": "https://discord.com/invite/SbxSPJ8FkD",
+        "explorerBlockLinks": {
+            "block": "https://explorer.canxium.org/block/$height$/transactions",
+            "uncle": "https://explorer.canxium.org/block/$hash$/transactions"
+        },
+        "explorerTxLink": "https://explorer.canxium.org/tx/{0}",
+        "explorerAccountLink": "https://explorer.canxium.org/address/{0}"
+    },
+    "florachain": {
+        "name": "FloraChain",
+        "canonicalName": "FloraChain",
+        "symbol": "FLR",
+        "family": "ethereum",
+        "website": "https://florachain.org/",
+        "market": "",
+        "twitter": "https://twitter.com/FloraChain",
+        "telegram": "https://t.me/FloraChain_Chat",
+        "discord": "https://discord.gg/58DS5WCunz",
+        "explorerBlockLinks": {
+            "block": "https://florascan.io/block/$height$",
+            "uncle": "https://florascan.io/uncle/$height$"
+        },
+        "explorerTxLink": "https://florascan.io/tx/{0}",
+        "explorerAccountLink": "https://florascan.io/address/{0}"
+    },
+    "egem": {
+        "name": "Egem",
+        "canonicalName": "Egem",
+        "symbol": "EGEM",
+        "family": "ethereum",
+        "website": "https://egem.io/",
+        "market": "https://www.coingecko.com/en/coins/ethergem",
+        "twitter": "https://twitter.com/EtherGemCoin",
+        "telegram": "https://t.me/egemofficial",
+        "discord": "https://discord.egem.io/",
+        "explorerBlockLinks": {
+            "block": "https://blockscout.egem.io/block/$height$",
+            "uncle": "https://blockscout.egem.io/uncle/$height$"
+        },
+        "explorerTxLink": "https://blockscout.egem.io/tx/{0}",
+        "explorerAccountLink": "https://blockscout.egem.io/address/{0}"
+    },
+    "avescoin": {
+        "name": "Aves",
+        "canonicalName": "Aves",
+        "symbol": "AVS",
+        "family": "ethereum",
+        "website": "https://avescoin.io/",
+        "market": "",
+        "twitter": "https://twitter.com/FloraChain",
+        "telegram": "",
+        "discord": "https://discord.gg/NDhQBnWBVY",
+        "explorerBlockLinks": {
+            "block": "https://avescan.io/block/$height$",
+            "uncle": "https://avescan.io/uncle/$height$"
+        },
+        "explorerTxLink": "https://avescan.io/tx/{0}",
+        "explorerAccountLink": "https://avescan.io/address/{0}"
+    },
+    "octa": {
         "name": "OctaSpace",
-        "canonicalName": "Octa.Space",
+        "canonicalName": "OctaSpace",
         "symbol": "OCTA",
         "family": "ethereum",
         "website": "https://octa.space/",
-        "market": "https://coinmarketcap.com/currencies/octaspace/",
+        "market": "https://www.coingecko.com/en/coins/octaspace",
         "twitter": "https://twitter.com/octa_space",
         "telegram": "https://t.me/octa_space",
         "discord": "https://discord.gg/octaspace",
         "explorerBlockLinks": {
             "block": "https://explorer.octa.space/block/$height$",
-            "uncle": "https://explorer.octa.space/block/$height$"
+            "uncle": "https://explorer.octa.space/uncle/$height$"
         },
         "explorerTxLink": "https://explorer.octa.space/tx/{0}",
-        "explorerAccountLink": "https://explorer.octa.space/address/{0}",
-        "ethasher": "ethash"
+        "explorerAccountLink": "https://explorer.octa.space/address/{0}"
     },
-    "pinkchain": {
-        "name": "PinkChain",
-        "canonicalName": "PinkChain",
-        "symbol": "PINK",
+    "elhereum": {
+        "name": "Elhereum",
+        "canonicalName": "Elhereum",
+        "symbol": "ELH",
         "family": "ethereum",
-        "website": "https://pinkchain.net/",
-        "market": "",
-        "twitter": "https://twitter.com/PinkchainNet",
-        "telegram": "https://t.me/PinkSmartChain",
-        "discord": "https://discord.gg/jzxrn5H4eQ",
-        "explorerBlockLinks": {
-            "block": "https://pinkscan.org/block/$height$",
-            "uncle": "https://pinkscan.org/uncle/$height$"
-        },
-        "explorerTxLink": "https://pinkscan.org/tx/{0}",
-        "explorerAccountLink": "https://pinkscan.org/address/{0}",
-        "ethasher": "ethash"
-    },
-    "hypra": {
-        "name": "Hypra",
-        "canonicalName": "Hypra",
-        "symbol": "HYP",
-        "family": "ethereum",
-        "website": "https://www.hypra.network/",
+        "website": "https://elhereum.com/",
         "market": "",
         "twitter": "",
         "telegram": "",
-        "discord": "https://discord.gg/xCB4AJDEFb",
+        "discord": "",
         "explorerBlockLinks": {
-            "block": "https://explorer.hypra.network/block/$height$",
-            "uncle": "https://explorer.hypra.network/block/$hash$"
+            "block": "https://explorer.elhereum.com/$height$",
+            "uncle": "https://explorer.elhereum.com/$height$"
         },
-        "explorerTxLink": "https://explorer.hypra.network/tx/{0}",
-        "explorerAccountLink": "https://explorer.hypra.network/address/{0}",
-        "ethasher": "ethashb3"
+        "explorerTxLink": "https://explorer.elhereum.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.elhereum.com/address/{0}",
+        "ethasher": "ethash"
     },
     "ubiq": {
         "name": "Ubiq",
