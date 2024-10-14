@@ -614,7 +614,7 @@ public class EthereumPayoutHandler : PayoutHandlerBase,
             Value = amount.ToString("x").TrimStart('0'),
         };
         
-        if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || (extraPoolConfig?.ChainTypeOverride == "Ubiq") || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "EtherOne" )
+        if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || (extraPoolConfig?.ChainTypeOverride == "Ubiq") || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "Octa" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra"))
         {
             var maxPriorityFeePerGas = await rpcClient.ExecuteAsync<string>(logger, EC.MaxPriorityFeePerGas, ct);
             
