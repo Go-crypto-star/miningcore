@@ -4927,22 +4927,23 @@
         "explorerTxLink": "https://avescan.io/tx/{0}",
         "explorerAccountLink": "https://avescan.io/address/{0}"
     },
-    "octa": {
+    "octaspace": {
         "name": "OctaSpace",
-        "canonicalName": "OctaSpace",
+        "canonicalName": "Octa.Space",
         "symbol": "OCTA",
         "family": "ethereum",
         "website": "https://octa.space/",
-        "market": "https://www.coingecko.com/en/coins/octaspace",
+        "market": "https://coinmarketcap.com/currencies/octaspace/",
         "twitter": "https://twitter.com/octa_space",
         "telegram": "https://t.me/octa_space",
         "discord": "https://discord.gg/octaspace",
         "explorerBlockLinks": {
             "block": "https://explorer.octa.space/block/$height$",
-            "uncle": "https://explorer.octa.space/uncle/$height$"
+            "uncle": "https://explorer.octa.space/block/$height$"
         },
         "explorerTxLink": "https://explorer.octa.space/tx/{0}",
-        "explorerAccountLink": "https://explorer.octa.space/address/{0}"
+        "explorerAccountLink": "https://explorer.octa.space/address/{0}",
+        "ethasher": "ethash"
     },
     "elhereum": {
         "name": "Elhereum",
