@@ -194,7 +194,7 @@ public class EthereumPayoutHandler : PayoutHandlerBase,
                                 var gasUsed = blockHashResponse.Response.GasUsed;
 
                                 var burnedFee = (decimal) 0;
-                                if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "Ubiq" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Pink" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "Octa" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra")
+                                if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "Ubiq" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Pink" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "OctaSpace" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra")
                                     burnedFee = (baseGas * gasUsed / EthereumConstants.Wei);
 
                                 block.Hash = blockHash;
@@ -380,7 +380,7 @@ public class EthereumPayoutHandler : PayoutHandlerBase,
         // ensure we have enough peers
         var infoResponse = await rpcClient.ExecuteAsync<string>(logger, EC.GetPeerCount, ct);
 
-        if((networkType == EthereumNetworkType.Main || extraPoolConfig?.ChainTypeOverride == "Classic" || extraPoolConfig?.ChainTypeOverride == "Mordor" || networkType == EthereumNetworkType.MainPow || extraPoolConfig?.ChainTypeOverride == "Ubiq" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Pink" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "Octa" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra") &&
+        if((networkType == EthereumNetworkType.Main || extraPoolConfig?.ChainTypeOverride == "Classic" || extraPoolConfig?.ChainTypeOverride == "Mordor" || networkType == EthereumNetworkType.MainPow || extraPoolConfig?.ChainTypeOverride == "Ubiq" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Pink" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "OctaSpace" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra") &&
            (infoResponse.Error != null || string.IsNullOrEmpty(infoResponse.Response) ||
                infoResponse.Response.IntegralFromHex<int>() < EthereumConstants.MinPayoutPeerCount))
         {
@@ -635,7 +635,7 @@ public class EthereumPayoutHandler : PayoutHandlerBase,
             Value = amount.ToString("x").TrimStart('0'),
         };
         
-        if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || (extraPoolConfig?.ChainTypeOverride == "Ubiq") || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "Octa" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra")
+        if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || (extraPoolConfig?.ChainTypeOverride == "Ubiq") || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "OctaSpace" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra")
         {
             var maxPriorityFeePerGas = await rpcClient.ExecuteAsync<string>(logger, EC.MaxPriorityFeePerGas, ct);
             
