@@ -194,7 +194,7 @@ public class EthereumPayoutHandler : PayoutHandlerBase,
                                 var gasUsed = blockHashResponse.Response.GasUsed;
 
                                 var burnedFee = (decimal) 0;
-                                if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "Ubiq" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Pink" || extraPoolConfig?.ChainTypeOverride == "Hypra")
+                                if(extraPoolConfig?.ChainTypeOverride == "Ethereum" || extraPoolConfig?.ChainTypeOverride == "Main" || extraPoolConfig?.ChainTypeOverride == "MainPow" || extraPoolConfig?.ChainTypeOverride == "Ubiq" || extraPoolConfig?.ChainTypeOverride == "EtherOne" || extraPoolConfig?.ChainTypeOverride == "Pink" || extraPoolConfig?.ChainTypeOverride == "Egem" || extraPoolConfig?.ChainTypeOverride == "Aves" || extraPoolConfig?.ChainTypeOverride == "Flora" || extraPoolConfig?.ChainTypeOverride == "Octa" || extraPoolConfig?.ChainTypeOverride == "Bitnet" || extraPoolConfig?.ChainTypeOverride == "Altcoin" || extraPoolConfig?.ChainTypeOverride == "Canxium" || extraPoolConfig?.ChainTypeOverride == "Hypra")
                                     burnedFee = (baseGas * gasUsed / EthereumConstants.Wei);
 
                                 block.Hash = blockHash;
