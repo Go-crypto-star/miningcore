@@ -1,4 +1,3 @@
-
 using System.Data;
 using System.Numerics;
 using Autofac;
@@ -81,9 +80,9 @@ public class EthereumPayoutHandler : PayoutHandlerBase,
         Contract.RequiresNonNull(blocks);
 
         // ensure we have enough peers
-        var enoughPeers = await EnsureDaemonsSynchedAsync(ct);
-        if(!enoughPeers)
-            return blocks;
+        //var enoughPeers = await EnsureDaemonsSynchedAsync(ct);
+       // if(!enoughPeers)
+           // return blocks;
 
         var coin = poolConfig.Template.As<EthereumCoinTemplate>();
         var pageSize = 100;
