@@ -90,9 +90,44 @@ public class OctaSpaceConstants
     public const decimal BaseRewardInitial = 6.5m;
 }
 
+public class FloraConstants
+{
+    public const decimal BaseRewardInitial = 5.0m;
+}
+
+public class AvesConstants
+{
+    public const decimal BaseRewardInitial = 2.85m;
+}
+
+public class EgemConstants
+{
+    public const decimal BaseRewardInitial = 3.0m;
+}
+
 public class PinkConstants
 {
     public const decimal BaseRewardInitial = 1.0m;
+}
+
+public class CanxiumConstants
+{
+    public const decimal BaseRewardInitial = 0.1875m;
+}
+
+public class BitnetConstants
+{
+    public const decimal BaseRewardInitial = 1.0m;
+}
+
+public class AltcoinConstants
+{
+    public const decimal BaseRewardInitial = 2.0m;
+}
+
+public class ElhereumConstants
+{
+    public const decimal BaseRewardInitial = 2.0m;
 }
 
 // Hypra
@@ -126,6 +161,29 @@ public class UbiqConstants
     public const decimal BaseRewardInitial = 8.0m;
 }
 
+public class LuckyBitsConstants
+{
+    public const ulong YearOneHeight = 100001;
+    public const decimal YearOneBlockReward = 9.0m;
+    public const ulong YearTwoHeight = 200001;
+    public const decimal YearTwoBlockReward = 8.0m;
+    public const ulong YearThreeHeight = 300001;
+    public const decimal YearThreeBlockReward = 7.0m;
+    public const ulong YearFourHeight = 400001;
+    public const decimal YearFourBlockReward = 6.0m;
+    public const ulong YearFiveHeight = 500001;
+    public const decimal YearFiveBlockReward = 5.0m;
+    public const ulong YearSixHeight = 600001;
+    public const decimal YearSixBlockReward = 4.0m;
+    public const ulong YearSevenHeight = 700001;
+    public const decimal YearSevenBlockReward = 3.0m;
+    public const ulong YearEightHeight = 800001;
+    public const decimal YearEightBlockReward = 2.0m;
+    public const ulong YearNineHeight = 900001;
+    public const decimal YearNineBlockReward = 1.0m;
+    public const decimal BaseRewardInitial = 10.0m;
+}
+
 public enum EthereumNetworkType
 {
     Main = 1,
@@ -136,10 +194,18 @@ public enum EthereumNetworkType
     Callisto = 820,
     MainPow = 10001,
     EtherOne = 4949,
+    Egem = 1987,
+    Aves = 33333,
+    Flora = 10500,
     Pink = 10100,
+    Bitnet = 210,
+    Canxium = 3003,
+    Altcoin = 2330,
     OctaSpace = 800001,
     OctaSpaceTestnet = 800002,
     Hypra = 622277,
+    LuckyBits = 777,
+    Elhereum = 2323,
 
     Unknown = -1,
 }
@@ -154,10 +220,18 @@ public enum GethChainType
     Callisto,
     MainPow = 10001,
     EtherOne = 4949,
+    Egem = 1987,
+    Aves = 33333,
+    Flora = 10500,
     Pink = 10100,
+    Bitnet = 210,
+    Canxium = 3003,
+    Altcoin = 2330,
     OctaSpace,
     OctaSpaceTestnet,
     Hypra,
+    LuckyBits,
+    Elhereum = 2323,
     
     Unknown = -1,
 }
