@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Globalization;
 using System.Numerics;
 using System.Reactive.Linq;
@@ -21,6 +22,7 @@ using Contract = Miningcore.Contracts.Contract;
 using EC = Miningcore.Blockchain.Ethereum.EthCommands;
 using static Miningcore.Util.ActionUtils;
 using System.Reactive;
+using System.Collections.Concurrent;
 using Miningcore.Mining;
 using Miningcore.Rpc;
 using Newtonsoft.Json.Linq;
