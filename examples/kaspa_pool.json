@@ -63,14 +63,14 @@
         }
     },
     "pools": [{
-        "id": "kas1",
+        "id": "kasv2",
         "enabled": true,
-        "coin": "kaspa",
-        "address": "kaspa:qpee454h906cyt6pqr5gfegpxx7xjqp79dtwcqz8t698ugulhq8fxg56uaxm9",
+        "coin": "kaspav2",
+        "address": "kaspav2:qpee454h906cyt6pqr5gfegpxx7xjqp79dtwcqz8t698ugulhq8fxg56uaxm9",
         "rewardRecipients": [
             {
                 "type": "op",
-                "address": "kaspa:qpee454h906cyt6pqr5gfegpxx7xjqp79dtwcqz8t698ugulhq8fxg56uaxm9",
+                "address": "kaspav2:qpee454h906cyt6pqr5gfegpxx7xjqp79dtwcqz8t698ugulhq8fxg56uaxm9",
                 "percentage": 1
             }
         ],
@@ -116,13 +116,13 @@
         "daemons": [
             {
                 "host": "127.0.0.1",
-                "port": 16110,
+                "port": 21110,
                 "user": null,
                 "password": null
             },
             {
                 "host": "127.0.0.1",
-                "port": 8082,
+                "port": 8281,
                 "user": null,
                 "password": null,
                 "category": "wallet"
